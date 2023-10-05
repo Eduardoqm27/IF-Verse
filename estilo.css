@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    background-color: #3eaa00;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 100%;
+    background-color: lightgray;
+    height: 300px; 
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  footer {
+    background-color: #3eaa00;
+    margin-bottom: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
